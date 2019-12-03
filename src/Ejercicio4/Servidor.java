@@ -1,4 +1,7 @@
-package Ejercicio2;
+package Ejercicio4;
+
+import Ejercicio2.ServicioEcho;
+import Ejercicio2.ServicioHora;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -21,14 +24,14 @@ public class Servidor {
 
     //constructor de servidor
 
-    public Servidor (int puertoEcho, int puertoHora){
+    public Servidor(int puertoEcho, int puertoHora) {
         this.puertoEcho = puertoEcho;
         this.puertoHora = puertoHora;
     }
 
     //iniciar servidor
 
-    public void iniciarServidor(){
+    public void iniciarServidor() {
         try {
             servidorEcho = new ServerSocket(this.puertoEcho);
             servidorHora = new ServerSocket(this.puertoHora);
@@ -39,7 +42,7 @@ public class Servidor {
 
     //Accion aceptar cliente hora
 
-    public void aceptarClientesHora(){
+    public void aceptarClientesHora() {
         try {
             Timer timer = new Timer();
             timer.scheduleAtFixedRate(new TimerTask() {
@@ -54,21 +57,15 @@ public class Servidor {
                         e1.printStackTrace();
                     }
                 }
-            },retraso,retraso);
+            }, retraso, retraso);
         } catch (Exception exc) {
             exc.printStackTrace();
         }
     }
 
-    /**
-     * Acerca de porque uso el timer.scheduleAtFixedRate cada 1000ms,
-     * es para que me de avisos relativos al primer aviso,  si el ordenador está muy ocupado
-     * y da avisos cada 1.1 segundos en vez de cada segundo, el primer aviso se recibirá en el
-     * segundo 1.1, el segundo en el 2.1, el tercero en el 3.1, etc. El retraso no se va acumulando.
-     */
-
     //Accion aceptar clientes echo
-    public void aceptarClientesEcho(){
+
+    public void aceptarClientesEcho() {
         try {
             Timer timer = new Timer();
             timer.scheduleAtFixedRate(new TimerTask() {
@@ -83,8 +80,8 @@ public class Servidor {
                         e1.printStackTrace();
                     }
                 }
-            }, retraso, retraso); //cada 1000 ms me avisas pasados 1000ms
-        }catch (Exception exc) {
+            }, retraso, retraso);
+        } catch (Exception exc) {
             exc.printStackTrace();
         }
     }

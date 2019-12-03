@@ -41,7 +41,7 @@ public class Servidor {
             Timer timer = new Timer();
             timer.scheduleAtFixedRate(new TimerTask() {
                 @Override
-                public void run() {
+                public void run() { //codigo a ejecutar
                     try {
                         cliente = servidorEcho.accept();
                         ServicioEcho se = new ServicioEcho(cliente);

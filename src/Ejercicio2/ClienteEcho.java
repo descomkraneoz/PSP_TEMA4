@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ClienteEcho {
     public static void main(String[] args) {
+        //Este cliente mandara un mensaje al servidor y luego recibira una respuesta de este que mostrara en pantalla
         Cliente c = new Cliente("localhost",9998);
         c.iniciaCliente();
         //escribir mensaje

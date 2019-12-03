@@ -5,10 +5,6 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-/**
- * 3.- Modificar el programa del ejercicio 1 para que pueda aceptar varios clientes a la vez,
- * es decir, hacer concurrente el servidor del ejercicio 1.
- */
 
 public class Cliente {
     private Socket socketCliente;

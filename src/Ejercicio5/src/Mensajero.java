@@ -14,7 +14,7 @@ public class Mensajero {
         //Nombre del archivo a enviar.
         String filePath = nombreArchivo;
 
-        //Canal de entrada que lee el archivo.
+        //Dirección de entrada que lee el archivo.
         Path path = Paths.get(filePath);
         FileChannel canalEntrada = FileChannel.open(path);
 

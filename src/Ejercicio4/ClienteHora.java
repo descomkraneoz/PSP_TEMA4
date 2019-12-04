@@ -1,27 +1,18 @@
 package Ejercicio4;
 
-import Ejercicio2.Cliente;
+
 
 public class ClienteHora {
-    Cliente[] arrayClientes;
+    public static void main(String[] args) {
+        Cliente cliente = new Cliente("localhost", 9999);
+        cliente.iniciaCliente();
+        cliente.recibeMensaje();
 
-    ClienteHora() {
-        arrayClientes = new Cliente[]{
-                new Cliente("localhost", 9999),
-                new Cliente("localhost", 9999),
-                new Cliente("localhost", 9999),
-        };
-    }
-
-
-    public void ClienteHoraIniciar() {
-        //Cliente cliente = new Cliente("localhost", 9999);
-
-        for (int i = 0; i < arrayClientes.length; i++) {
-            //iniciar clienteHora
-            arrayClientes[i].iniciaCliente();
-            //ver si recibe mensaje
-            arrayClientes[i].recibeMensaje();
-        }
+        Cliente cl = new Cliente("localhost", 9999);
+        cl.iniciaCliente();
+        cl.recibeMensaje();
+        Cliente te = new Cliente("localhost", 9999);
+        te.iniciaCliente();
+        te.recibeMensaje();
     }
 }

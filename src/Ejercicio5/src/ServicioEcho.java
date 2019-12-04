@@ -25,7 +25,7 @@ public class ServicioEcho extends Thread {
     }
 
     public void run() {
-        String listaArchivos = "1)Ingredientes \n 2)Smoothie_Bowl.jpg \n 3)Elaboracion";
+        String listaArchivos = " 1)Ingredientes \n 2)Smoothie_Bowl.jpg \n 3)Elaboracion";
         try {
             dis = new DataInputStream(cliente.getInputStream());
             dos = new DataOutputStream(cliente.getOutputStream());

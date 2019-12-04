@@ -10,6 +10,10 @@ import java.io.IOException;
  * desconectarse.
  */
 
+/**
+ * 6.- Modificar el programa anterior para que pueda enviar cualquier tipo de archivo.
+ */
+
 public class mainServidor {
     public static void main(String[] args) throws IOException {
         Servidor servidor = new Servidor(1234);

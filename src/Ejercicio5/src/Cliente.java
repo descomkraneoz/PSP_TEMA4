@@ -21,7 +21,7 @@ public class Cliente {
         this.archivoDestino = archivoDestino;
     }
 
-    public void iniciaComunicacion() {
+    public void iniciarCliente() {
         try {
             socketCliente = new Socket(this.ip, this.puerto);
             dis = new DataInputStream(socketCliente.getInputStream());

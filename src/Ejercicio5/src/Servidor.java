@@ -1,9 +1,5 @@
 package Ejercicio5.src;
 
-import Ejercicio2.ServicioEcho;
-
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -13,8 +9,6 @@ import java.util.TimerTask;
 public class Servidor {
     private Socket cliente;
     private ServerSocket servidorEcho;
-    private DataInputStream dis;
-    private DataOutputStream dos;
     private int puertoEcho;
     private long retraso = 1000;
 

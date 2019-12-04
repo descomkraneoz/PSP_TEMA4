@@ -1,7 +1,5 @@
 package Ejercicio4;
 
-import Ejercicio2.ServicioEcho;
-import Ejercicio2.ServicioHora;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

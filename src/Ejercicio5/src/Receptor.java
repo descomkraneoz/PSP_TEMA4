@@ -14,7 +14,7 @@ import java.util.EnumSet;
 public class Receptor {
 
     protected void leeDeSocketChannel(SocketChannel socketChannel, String nombreArchivo) throws IOException {
-        //Archivo que se creará del archivo recibido
+        //Archivo que se crea del archivo recibido
         String filePath = nombreArchivo + "r";
 
         Path path = Paths.get(filePath);
